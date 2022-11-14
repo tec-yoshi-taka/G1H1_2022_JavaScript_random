@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p class="omikuji"></p>
+  <script>
+    "use strict";
+    const omikuji = document.querySelector('.omikuji');
+    // 0-3の値が入る
+    let value = Math.floor(Math.random()*4);
+    const omiArray = ['大吉','中吉','吉','凶'];
+    omikuji.innerHTML = omiArray[value];
+    // if(value === 0){
+    //   omikuji.innerHTML = '大吉';
+    // }else if(value === 1){
+    //   omikuji.innerHTML = '中吉';
+    // }else if(value === 2){
+    //   omikuji.innerHTML = '吉';
+    // }else{
+    //   omikuji.innerHTML = '凶';
+    // }
+    
+    
+    const a = [];
+    a[0] = 100;
+    a[1] = 200;
+    a[2] = 300;
+    a[3] = 400;
+
+    console.log(a[value]);
+    
+  </script>
+</body>
+</html>
